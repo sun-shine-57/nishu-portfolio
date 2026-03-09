@@ -1,0 +1,297 @@
+<main class="min-h-screen px-6 py-12 md:px-24 md:py-24 max-w-6xl mx-auto space-y-32">
+
+  <!-- HERO -->
+  <section class="space-y-8 pt-10">
+
+    <div class="font-mono text-sm text-cyan-400 h-16 whitespace-pre-line">
+      {{typedText}}
+      <span class="animate-pulse">_</span>
+    </div>
+
+    <!-- Name + Profile -->
+  <div class="flex items-center gap-6 flex-wrap">
+
+        <img
+        src="profile.jpeg"
+        alt="Nishu Kumari"
+        class="w-28 h-28 rounded-full object-cover border-2 border-slate-700 shadow-lg"
+        />
+
+        <div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white">
+            Nishu Kumari
+        </h1>
+        </div>
+
+  </div>
+
+    <div class="flex flex-wrap gap-3 text-sm font-mono text-slate-300">
+      <span *ngFor="let tag of tags"
+        class="px-3 py-1 bg-slate-800/60 border border-slate-700 rounded-full">
+        {{tag}}
+      </span>
+    </div>
+
+    <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed">
+      Working as an Application Engineer at Flipkart, contributing to backend
+      services and internal infrastructure automation. Involved in CI/CD pipeline
+      management, containerization using Docker and Kubernetes, and deployment
+      optimization to ensure reliable and scalable system performance.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+      <a href="#experience"
+        class="flex items-center justify-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-md font-semibold hover:bg-slate-200 transition-colors">
+        View Engineering Experience
+      </a>
+
+      <a href="#architecture"
+        class="flex items-center justify-center gap-2 bg-slate-800 text-white border border-slate-700 px-6 py-3 rounded-md font-semibold hover:bg-slate-700 transition-colors">
+        System Architecture
+      </a>
+
+      <a href="https://drive.google.com/file/d/1OWZj4YqDtQJq8HeE4_F4oNq9aaPnEtlF/view?usp=drive_link"
+        class="flex items-center justify-center gap-2 bg-transparent text-slate-300 border border-slate-700 px-6 py-3 rounded-md font-semibold hover:bg-slate-800 transition-colors">
+        Resume
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- ARCHITECTURE -->
+  <section id="architecture" class="space-y-12">
+
+    <div>
+      <h2 class="text-3xl font-bold text-white">
+        Infrastructure & Architecture
+      </h2>
+      <p class="text-slate-400 mt-2">
+        High-level systems engineered and managed.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl backdrop-blur-sm hover:border-slate-600 transition-colors">
+        <h3 class="text-xl font-bold text-slate-200 mb-2">
+          Container Orchestration
+        </h3>
+
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Leveraged at Flipkart for deployment optimization. Utilizing Docker and
+          Kubernetes to ensure reliable and scalable backend deployments,
+          maintaining environment consistency across clusters.
+        </p>
+
+        <div class="flex gap-2 font-mono text-xs text-indigo-300">
+          <span class="bg-indigo-500/10 px-2 py-1 rounded">Docker</span>
+          <span class="bg-indigo-500/10 px-2 py-1 rounded">Kubernetes</span>
+        </div>
+      </div>
+
+
+      <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl backdrop-blur-sm hover:border-slate-600 transition-colors">
+        <h3 class="text-xl font-bold text-slate-200 mb-2">
+          CI/CD Pipeline Management
+        </h3>
+
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Internal infrastructure automation. Managed automated continuous
+          integration and delivery pipelines, reducing manual deployment
+          overhead and increasing system reliability.
+        </p>
+
+        <div class="flex gap-2 font-mono text-xs text-emerald-300">
+          <span class="bg-emerald-500/10 px-2 py-1 rounded">Automation</span>
+          <span class="bg-emerald-500/10 px-2 py-1 rounded">Pipelines</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="space-y-12">
+
+    <h2 class="text-3xl font-bold text-white">
+      Engineering Experience
+    </h2>
+
+    <div class="relative border-l border-slate-700 ml-3 space-y-12 pb-4">
+
+      <div class="relative pl-8">
+        <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-[8.5px] top-1 ring-4 ring-slate-950"></div>
+
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-100">Application Engineer</h3>
+          <span class="text-cyan-400 font-mono text-sm">
+            Jul 2024 - Dec 2025
+          </span>
+        </div>
+
+        <div class="text-lg text-slate-300 mb-4 font-semibold">
+          Flipkart
+        </div>
+
+        <ul class="space-y-3 text-slate-400 list-disc pl-5">
+          <li>Contributing to backend services and internal infrastructure automation.</li>
+          <li>Involved in CI/CD pipeline management and containerization using Docker and Kubernetes.</li>
+          <li>Executed deployment optimization to ensure reliable and scalable system performance.</li>
+        </ul>
+
+      </div>
+
+
+      <div class="relative pl-8">
+
+        <div class="absolute w-4 h-4 bg-slate-600 rounded-full -left-[8.5px] top-1 ring-4 ring-slate-950"></div>
+
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-100">
+            Full Stack Web Developer
+          </h3>
+
+          <span class="text-slate-400 font-mono text-sm">
+            Mar 2024 - Apr 2024
+          </span>
+        </div>
+
+        <div class="text-lg text-slate-300 mb-4 font-semibold">
+          Webstack Academy - WSA
+        </div>
+
+        <ul class="space-y-3 text-slate-400 list-disc pl-5">
+          <li>Developed a hotel booking website using the MERN stack.</li>
+          <li>Implemented authentication, booking management, and payment integration.</li>
+          <li>Designed responsive UI and conducted end-to-end testing.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+    <section class="space-y-12">
+
+        <h2 class="text-3xl font-bold text-white">
+        Technical Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div *ngFor="let project of projects"
+                class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 md:p-8 backdrop-blur-sm hover:border-slate-600 transition-colors">
+
+                <h3 class="text-2xl font-bold text-slate-100 mb-3">
+                {{project.title}}
+                </h3>
+
+                <p class="text-slate-400 mb-4 leading-relaxed">
+                {{project.description}}
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6 font-mono text-xs">
+
+                    <span *ngFor="let tech of project.tech"
+                    class="bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">
+
+                    {{tech}}
+
+                    </span>
+
+                </div>
+
+                <a
+                    [href]="project.github"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold transition-colors">
+
+                    View GitHub Repository →
+
+                </a>
+
+            </div>
+
+    </div>
+
+    </section>
+
+
+  <!-- SKILLS -->
+  <section class="space-y-12">
+
+    <h2 class="text-3xl font-bold text-white">
+      Technical Arsenal
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div *ngFor="let category of skills"
+        class="bg-slate-900/30 border border-slate-800 rounded-xl p-6">
+
+        <h3 class="text-lg font-semibold text-slate-200 mb-4">
+          {{category.title}}
+        </h3>
+
+        <div class="flex flex-wrap gap-2">
+
+          <span *ngFor="let skill of category.skills"
+            class="px-3 py-1 bg-slate-800/80 text-slate-300 text-sm rounded-md border border-slate-700 font-mono">
+
+            {{skill}}
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer
+    class="border-t border-slate-800 pt-8 pb-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">
+
+    <div class="flex flex-col gap-1 items-center md:items-start">
+      <p class="text-slate-300 font-semibold text-base">
+        Nishu Kumari
+      </p>
+
+      <p>Jamshedpur, Jharkhand, India</p>
+
+      <p>
+        Languages: English (Full Professional), Japanese (Elementary)
+      </p>
+    </div>
+
+    <div class="flex gap-6">
+
+      <a href="mailto:sunshine152018@gmail.com"
+        class="hover:text-cyan-400 transition-colors">
+        Email
+      </a>
+
+      <a href="tel:9304807762"
+        class="hover:text-cyan-400 transition-colors">
+        Phone
+      </a>
+
+      <a href="https://www.linkedin.com/in/nishu0073"
+        target="_blank"
+        class="hover:text-cyan-400 transition-colors">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </footer>
+
+</main>
