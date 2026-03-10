@@ -30,15 +30,15 @@ export class HomeComponent implements OnInit {
   skills = [
     {
       title: "Backend & Languages",
-      skills:["Java","Spring Boot","Node.js","Express","Thymeleaf","C (Intro)"]
+      skills:["Java","C++","Python","Spring Boot","Node.js","Angular","Thymeleaf"]
     },
     {
       title:"DevOps & Cloud",
-      skills:["Docker","Kubernetes","CI/CD","Linux Commands","Shell Scripting"]
+      skills:["Docker","Kubernetes","CI/CD","Linux Commands","Shell Scripting","GCP","Prometheus","Grafana","Jfrog"]
     },
     {
       title:"Architecture & Tools",
-      skills:["Microservices","Distributed Systems","Serverless","REST APIs","WebSocket","MongoDB","Agile & Scrum"]
+      skills:["Microservices","Distributed Systems","Serverless","REST APIs","WebSocket","MongoDB","Agile & Scrum","Git"]
     }
   ];
 
